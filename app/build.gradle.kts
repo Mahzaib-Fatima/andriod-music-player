@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.harshRajpurohit.musicPlayer"
+    namespace = "com.meh.musicPlayer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.harshRajpurohit.musicPlayer"
+        applicationId = "com.meh.musicPlayer"
         minSdk = 21
         targetSdk = 34
         versionCode = 11
@@ -65,5 +65,11 @@ dependencies {
 
     // Vertical Seekbar
     implementation(libs.verticalseekbar)
+
+    implementation (libs.verticalseekbar)
+    implementation( libs.androidmail)
+    implementation (libs.androidactivation)
+
+
 
 }

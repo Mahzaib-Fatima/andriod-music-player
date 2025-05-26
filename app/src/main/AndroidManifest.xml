@@ -10,7 +10,8 @@
 
     <!-- Notification-->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!-- Notification Permission for Android 14 -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
 
@@ -65,6 +66,9 @@
             android:screenOrientation="sensorPortrait"
             android:configChanges="uiMode|orientation"
             tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity android:name=".FeedbackActivity"
+            android:exported="true" />
+
 
         <activity
             android:name=".PlayerActivity"
